@@ -1,0 +1,33 @@
+name: Sync Fork on Upstream Update
+on:
+  repository_dispatch:
+    types: [sync]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.HS_FE_26_1 }}
+          fetch-depth: 0
+
+      - name: Add Upstream Repository
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git remote add upstream https://x-access-token:${{ secrets.HS_FE_26_1 }}@github.com/26-1-HubSpace-FE/26-1_HubSpace_FE.git
+      - name: Verify Remote Repositories
+        run: git remote -v
+
+      - name: Fetch Upstream
+        run: git fetch upstream
+
+      - name: Merge Upstream Changes
+        run: |
+          git checkout main
+          git merge upstream/main --no-edit
+
+      - name: Push Changes
+        run: git push origin main
