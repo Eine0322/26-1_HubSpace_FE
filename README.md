@@ -6,6 +6,7 @@
 
 이 서비스는 **이벤트(폼·파일)를 생성하고, 응답 데이터를 효율적으로 수집·관리·조회하기 위한 관리자 중심 웹 서비스**입니다.
 
+<br/>
 
 ## 📍 주요 기능
 
@@ -15,8 +16,20 @@
 - 이벤트 별 응답 데이터 조회 기능
 - 진행 중인 이벤트 통합 관리 기능
 
-## 📍 사용 스택
+<br/>
 
+## 📍 사용 스택
+**ROLE : Frontend**
+<div>
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white"/>
+    <img src="https://img.shields.io/badge/css-%23663399.svg?style=for-the-badge&logo=css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/>
+<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
+</div>
+
+<br/>
 
 ## 📍 기획 페이지
-[Uploading 허브스페이스 기획서.pdf…]()
+[허브스페이스 기획서.pdf](https://github.com/user-attachments/files/30317375/default.pdf)
+
